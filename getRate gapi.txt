@@ -1,0 +1,34 @@
+curl -X POST \
+  'https://int-api.ihg.com/channels/native/availability/v3/rates?service=gapi' \
+  -H 'Accept: */*' \
+  -H 'Accept-Encoding: gzip, deflate' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Length: 333' \
+  -H 'Content-Type: application/json' \
+  -H 'Cookie: BlueStripe.PVN=1938700000d39; _abck=C33132401D4B058095CE7E6DD9CE1F17~-1~YAAQvN3tzD0FnJFrAQAAZUqewgL+eHEfc4m0VnF/pEBlWWBXZHiS1pNCYf/zMpceTdybGZ3b6obIk0oP2fLy4+l0RVyxSvqAvfnNmMeYeaBXq0NxbHK9oc88fWPuN47NjsOZKMNCKr1Al7a1DwX3oP8350eK35kM0V19uRkiOz2qORFNwBPR9C4Dl+VjjDsAEq+QS94GiTBlxPL2v3Ww3uerLF5161yOaBSxn+0fDxbKT7hAaGxC3ndwZNQH3fClMnN+Rlgh144sAkSc6RrHFX8folgqM1mwMZX/76jnjOgxnwkcOE0F~-1~-1~-1; ak_bmsc=00499D7454C5BC6EA5C853A232E74B2BCCEDDDBCEE480000EA631F5DBE102478~plWFHVY8Ml4eCQXE03PKjBSr+GnBwyTKn6Lpk4hgVgRT6KTs5AVFrBpFcPjtsoOck9STTQaaSIYp82CpbQkP4xdB3WlH+mx4Bl3KLtJAPDt36/FgiQF7Q1Ut6C3gTCarxVEeH4CfBjRfCkxXzgJbZOg+ZEnUqmAGTog72rJFdBEtoJXBP39ZbUdv/js4GvtM9EhRrhqdR2Y3S3p7/cvxz0JFJfK1m7j/6f+brtei7cLlg=; bm_sz=400DF1F805BF80428010750AEE584AB3~YAAQvN3tzDwFnJFrAQAAZUqewgT5ntyrcEDN6LfI3nIy65bJeBkx1QoDkyEqABbGiaH5Vb7/POkrc3rUZVdyO17RBPQiILil6GQ2uQ021HJw8DUhdoFglso4gVnO3MwcuH+zYBdiac5sGC9OtQ8QOqT92xx7h8CFd2xmJq/qoFXLXEQR0r6FLcByKWqj; bm_sv=418017595A18317DA86E88007312FC93~ZTgdtIS3gDrhYh4SWTxJQzEM6m4yoMGvCehueabxj3NK2ZPMuFpkC8bZL1DWcO4aFvTJY9e3QNtLD0dDJplbdD9T8PUs9DKfo8HnspevCxO2UL1T/3wOT8RtXdLrd8yK9ZVi1KjLd47k7gt5PhObNQ==' \
+  -H 'Host: int-api.ihg.com' \
+  -H 'Postman-Token: 805401e3-9f53-4d50-91c3-c4a4271c8788,5a32b8f3-a746-4f3d-9691-b1420a0d493d' \
+  -H 'User-Agent: PostmanRuntime/7.15.2' \
+  -H 'X-IHG-API-KEY: 5Q9pnGYfRktynL5pUm6yGe3wJymebJp3' \
+  -H 'X-IHG-MWS-API-TOKEN: efbc3755-016f-456f-ac27-f24158882197' \
+  -H 'X-IHG-SSO-TOKEN: eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkExMjhDQkMtSFMyNTYifQ.pLyQ0nXwgrQ9hmh9EbqfC-Bo5DrrumvI6fK-YyXzrH7bOc1WvDozvAVnwfphbD9H9rpVvJL8oGNnYxHpNr5yP9kCAHKAHPNbA3e7o1rsoWB6aUgvN3pQnwv_cA9kxQEna4KC-my6EH1v3-kZaGZ6gCI_-0t-tOnUhLuTCcOoY0GWo5rlFsD_USSDstMEOKhwBG2Kco3e6XEQCh0tPd8gTDD4t-bIi8EDUrtnytPRQbFcsoA5q4JLhw5tnBpj3mIQTk7KLRppz6jNQkhQj5o0aQblozk64z7er1CFeA3pDgdYqeDM1Ix3g16IBk2Futyh5p9aVDGrGxi7qTlkZ02_JQ.k8-Ah-HE0mwvSwaLNoPuKA.eK4who-HlKF6bK7kOYqLj1HuB5n5o-mUfwlqH7sWELXqr6PYt-zu6uRYAuex4nzBjlD3YTYnpVPHltxglaORA-h72LaPSFJ0S1MdcQ0l1lQ.R1m5Ve6VkJA4HSMXNysPeQ' \
+  -H 'cache-control: no-cache' \
+  -d '{
+    "corporateAccountNumber": "",
+    "product": {
+        "children": 0,
+        "quantity": 1,
+        "adults": 1
+    },
+    "endDate": "2019-07-05",
+    "startDate": "2019-07-04",
+    "currencyCode": "USD",
+    "hotelMnemonics": [
+        "ATLPW"
+    ],
+    "options": {
+        "offerIds": []
+    },
+    "rateCode": "6CBARC"
+}'
